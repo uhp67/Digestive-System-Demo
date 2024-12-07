@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Digestive System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="diagram-container">
+        <h1>Interactive Digestive System</h1>
+        <p>Click on any part of the digestive system to learn more about its function.</p>
+        <div id="digestive-system">
+            <!-- Image Map -->
+            <img src="./img/digestive-system.png" alt="Digestive System" usemap="#digestive-map">
+			<map name="digestive-map">
+				<area target="" alt="Mouth" title="Mouth" onclick="showInfo('mouth')" coords="370,248,244,163" shape="rect">
+				<area target="" alt="Esophagus" title="Esophagus" onclick="showInfo('esophagus')" coords="440,473,376,284" shape="rect">
+				<area target="" alt="Liver" title="Liver" onclick="showInfo('liver')" coords="257,474,477,497,261,572" shape="poly">
+				<!-- <area target="" alt="Liver" title="Liver" onclick="showInfo('liver')" coords="257,474,477,497,261,570" shape="poly"> -->
+				<area target="" alt="Gallbladder" title="Gallbladder" onclick="showInfo('gallbladder')" coords="276,589,353,562" shape="rect">
+				<area target="" alt="Stomach" title="Stomach" onclick="showInfo('stomach')" coords="497,569,484,614,422,652,376,646,355,610,395,602,441,540,476,539" shape="poly">
+				<area target="" alt="Pancreas" title="Pancreas" onclick="showInfo('pancreas')" coords="500,559,520,590,487,613" shape="rect">
+				<area target="" alt="Small Intestine" title="Small Intestine" onclick="showInfo('smallIntestine')" coords="304,758,515,874" shape="rect">
+				<area target="" alt="Large Intestine" title="Large Intestine" onclick="showInfo('largeIntestine')" coords="264,651,306,650,363,698,425,702,476,676,520,630,548,633,558,661,552,689,542,720,543,742,543,773,548,820,556,853,549,905,535,927,508,949,474,960,441,947,413,945,422,923,438,921,459,919,474,910,485,902,492,895,498,890,506,880,513,870,518,864,524,858,523,842,521,823,524,804,526,792,528,781,529,768,530,755,530,739,520,728,507,725,501,726,501,716,490,725,475,731,458,738,447,742,427,747,410,747,390,749,360,747,342,745,324,734,301,726,296,722,299,738,299,747,294,761,287,767,284,775,284,787,284,799,286,807,286,816,281,823,279,828,278,834,278,841,279,850,289,862,295,863,303,866,315,875,321,882,325,888,326,896,324,904,319,911,310,912,303,912,290,912,277,906,269,890,264,880,259,864,259,847,257,831,257,811,255,798,254,784,255,773,257,757,259,738,259,729,259,715,258,703,258,688,258,676,517,911" shape="poly">
+				<area target="" alt="Anus" title="Anus" onclick="showInfo('anus')" coords="451,975,369,1068" shape="rect">
+			</map>
+        </div>
+        <div id="info-box">
+            <h2 id="info-title">Select a part</h2>
+            <p id="info-content">Click on a part of the digestive system to see its function.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

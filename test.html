@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map with Highlight</title>
+    <style>
+        /* Style for the image map */
+        .image-map {
+            position: relative;
+            width: 500px; /* Adjust to the size of your image */
+        }
+
+        /* Highlighting effect on hover */
+        .highlight {
+            position: absolute;
+            border: 2px solid red; /* Highlight border color */
+            background-color: rgba(255, 0, 0, 0.3); /* Optional semi-transparent background */
+            pointer-events: none; /* Prevents the highlight from interfering with clicks */
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hover Over Areas of the Image</h1>
+
+    <!-- The image map -->
+    <div class="image-map">
+        <img src="your-image.jpg" alt="Image with map" usemap="#image-map" width="500" height="auto" />
+
+        <!-- Highlight areas using divs or shapes -->
+        <div id="highlight1" class="highlight" style="top: 50px; left: 100px; width: 100px; height: 100px; display: none;"></div>
+        <div id="highlight2" class="highlight" style="top: 200px; left: 250px; width: 150px; height: 150px; display: none;"></div>
+    </div>
+
+    <!-- Image map with areas -->
+    <map name="image-map">
+        <area shape="rect" coords="100,50,200,150" alt="Area 1" onmouseover="document.getElementById('highlight1').style.display = 'block';" onmouseout="document.getElementById('highlight1').style.display = 'none';" href="javascript:void(0);" />
+        <area shape="rect" coords="250,200,400,350" alt="Area 2" onmouseover="document.getElementById('highlight2').style.display = 'block';" onmouseout="document.getElementById('highlight2').style.display = 'none';" href="javascript:void(0);" />
+    </map>
+
+</body>
+</html>

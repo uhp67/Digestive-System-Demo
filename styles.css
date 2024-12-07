@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#diagram-container {
+    padding: 20px;
+}
+
+#digestive-system {
+    position: relative;
+    display: inline-block;
+}
+
+#info-box {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #444;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 60%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#info-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#info-content {
+    font-size: 18px;
+}
+
